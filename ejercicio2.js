@@ -31,10 +31,15 @@ console.log(suma);
 
 
 // Ejercicio 2.4
-let precioBaseGlobal = 10000;
+let precioBaseGlobal = 25000;
 
 const nave1 = {nombre: "Ala-X", precioBase: 50000, precioFinal: 60000};
 const nave2 = {nombre: "Halcón Milenario", precioBase: 70000, precioFinal: 80000};
 
+nave1.precioFinal = nave1.precioBaseGlobal + nave1.precioBase;
+nave2.precioFinal = nave2.precioBaseGlobal + nave2.precioBase;
+
+console.log(nave1.precioFinal);
+console.log(nave2.precioFinal);
 
 
